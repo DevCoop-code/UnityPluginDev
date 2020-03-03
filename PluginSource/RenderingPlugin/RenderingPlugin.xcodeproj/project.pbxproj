@@ -6,9 +6,23 @@
 	objectVersion = 50;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		784716AD240E0672000DD74D /* RenderingPlugin.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 784716AC240E0672000DD74D /* RenderingPlugin.cpp */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		784716A3240DF587000DD74D /* RenderingPlugin.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RenderingPlugin.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		784716A6240DF587000DD74D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		784716AC240E0672000DD74D /* RenderingPlugin.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RenderingPlugin.cpp; sourceTree = "<group>"; };
+		784716AF240E0820000DD74D /* IUnityRenderingExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IUnityRenderingExtensions.h; sourceTree = "<group>"; };
+		784716B0240E0820000DD74D /* IUnityEventQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IUnityEventQueue.h; sourceTree = "<group>"; };
+		784716B1240E0821000DD74D /* IUnityGraphics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IUnityGraphics.h; sourceTree = "<group>"; };
+		784716B2240E0821000DD74D /* IUnityGraphicsD3D12.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IUnityGraphicsD3D12.h; sourceTree = "<group>"; };
+		784716B3240E0822000DD74D /* IUnityProfilerCallbacks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IUnityProfilerCallbacks.h; sourceTree = "<group>"; };
+		784716B4240E0822000DD74D /* IUnityGraphicsD3D11.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IUnityGraphicsD3D11.h; sourceTree = "<group>"; };
+		784716B5240E0822000DD74D /* IUnityShaderCompilerAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IUnityShaderCompilerAccess.h; sourceTree = "<group>"; };
+		784716B6240E0823000DD74D /* IUnityInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IUnityInterface.h; sourceTree = "<group>"; };
+		784716B7240E0823000DD74D /* IUnityGraphicsMetal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IUnityGraphicsMetal.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,9 +55,27 @@
 		784716A5240DF587000DD74D /* RenderingPlugin */ = {
 			isa = PBXGroup;
 			children = (
+				784716AE240E080F000DD74D /* Unity */,
 				784716A6240DF587000DD74D /* Info.plist */,
+				784716AC240E0672000DD74D /* RenderingPlugin.cpp */,
 			);
 			path = RenderingPlugin;
+			sourceTree = "<group>";
+		};
+		784716AE240E080F000DD74D /* Unity */ = {
+			isa = PBXGroup;
+			children = (
+				784716B0240E0820000DD74D /* IUnityEventQueue.h */,
+				784716B1240E0821000DD74D /* IUnityGraphics.h */,
+				784716B4240E0822000DD74D /* IUnityGraphicsD3D11.h */,
+				784716B2240E0821000DD74D /* IUnityGraphicsD3D12.h */,
+				784716B7240E0823000DD74D /* IUnityGraphicsMetal.h */,
+				784716B6240E0823000DD74D /* IUnityInterface.h */,
+				784716B3240E0822000DD74D /* IUnityProfilerCallbacks.h */,
+				784716AF240E0820000DD74D /* IUnityRenderingExtensions.h */,
+				784716B5240E0822000DD74D /* IUnityShaderCompilerAccess.h */,
+			);
+			path = Unity;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -113,6 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				784716AD240E0672000DD74D /* RenderingPlugin.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
