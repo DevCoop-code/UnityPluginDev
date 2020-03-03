@@ -20,3 +20,10 @@ In earlier version, Instead of IUnityGraphics using <b>UnitySetGraphicsDevice</b
 When multithreaded rendering is used, the rendering API commands happen on a thread which is completely separate from the one that runs MonoBehaviour scripts<br><br>
 In order to do any rendering from the plugin, you should call <b>GL.IssuePluginEvent</b> from your script. This will cause the provided native function to be called from the render thread.<br>
 For example if you call GL.IssuePluginEvent from the camera's onPostRender function, you get a plugin callback immediately after the camera has finished rendering.
+
+## Location of Unity API Header files
+In Mac OS
+- /Applications/Unity/Hub/Editor/<Your_Version>/Unity.app/Contents/PluginAPI
+
+<br>In Window OS
+- C:\Program Files\Unity\Editor\Data\PluginAPI\
